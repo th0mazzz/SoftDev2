@@ -1,3 +1,8 @@
+// weiWhen (Thomas Zhao and Weiwen Zhou)
+// SoftDev2 pd8
+// K01 -- and I want to Paint It Better
+// 2019-01-31
+
 //Defines global non-function variables
 var slate = document.getElementById("slate");
 var context = slate.getContext("2d");
