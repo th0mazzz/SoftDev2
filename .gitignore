@@ -3,6 +3,11 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+# Things Thomas added
+*.html~
+*.py~
+*.js~
+
 # C extensions
 *.so
 

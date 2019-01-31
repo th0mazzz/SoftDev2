@@ -1,16 +1,24 @@
 <!DOCTYPE html>
 <html>
   <style>
-    #slate {border:1px solid black}
+    #slate {
+	border:1px solid black
+    }
   </style>
-  <h1>Bonjour monde! (Hello World en francais)</h1>
-  <h2>Demo</h2>
-  <div>
-    <canvas height="600" width="600" id="slate">
-      hello
-    </canvas>
-  </div>
 
+  <div style="text-align:center">
+    <h1>00_canvas</h1>
+    <h2> <i> My Clickdraw Canvas </i> by tzhao2</h2>
+    <button style="margin-bottom:10px" id="clearButton" >Clear</button>
+    <button style="margin-bottom:10px" id="toggleButton">Toggle</button>
+    <text> Current Mode: <text id="modeDisplay"></text> </text>
+    
+    <div>
+      <canvas height="600" width="600" id="slate"></canvas>
+    </div>
+    
+  </div>
+  
   <script src="clickdraw.js"></script>
   
 </html>
