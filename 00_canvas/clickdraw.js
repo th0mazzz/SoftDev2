@@ -1,6 +1,6 @@
 // Thomas Zhao
 // SoftDev2 pd8
-// K00 -- and I want to Paint It Better
+// K00 -- I See a Red Door...
 // 2019-01-30
 
 //Defines global non-function variables
