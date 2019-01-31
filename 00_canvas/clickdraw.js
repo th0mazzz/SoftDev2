@@ -1,3 +1,8 @@
+// Thomas Zhao
+// SoftDev2 pd8
+// K00 -- and I want to Paint It Better
+// 2019-01-30
+
 //Defines global non-function variables
 var slate = document.getElementById("slate");
 var context = slate.getContext("2d");
