@@ -3,6 +3,21 @@
 // K01 -- and I want to Paint It Better
 // 2019-01-31
 
+/*
+Methods and values at a glance
+e.preventDefault()
+    -Prevents the default action of the eventListener from executing
+    -Use when you want to prevent an action from occur when the user clicks somewhere
+
+ctx.beginPath()
+    -Resets the list of previous click areas (use for creating line)
+    -Starts a new line.
+
+e.offsetX/e.offsetY
+    -The location of x or y coordinate of the mouse pointer relative to the target node
+        in this case the canvas
+*/
+
 //Defines global non-function variables
 var slate = document.getElementById("slate");
 var context = slate.getContext("2d");
@@ -33,7 +48,6 @@ var draw = function(e) {
 	context.beginPath();
 	/*
 	  CanvasRenderingContext2D.beginPath();
-
 	  This statement clears path information that may previously already be there.
 	  In the context of this code, it ensures that the circles-dots are individual
 	  circles and are not connected in any way.
@@ -43,7 +57,6 @@ var draw = function(e) {
 	/*
 	 event.offsetX
 	 event.offsetY
-
 	 The offset properties contain the x-coordinate and y-coordinate properties relative
 	 to the target element. The target element is part of the MouseEvent properties.
 	 In the context of this code, they provide the x-coordinates and the y-coordinates
