@@ -17,14 +17,18 @@ var clear_canvas = function() {
 
 // when click in canvas draw either a rectangle or ellipse
 canvas.addEventListener("click", function(e){
+    ctx.fillStyle = "#ff0000";
     drawEllipse(e.offsetX, e.offsetY, 10);
-    ctx.stroke();
+    ctx.fill();
 })
 
 var drawEllipse = function(mouseX, mouseY, radius){
     // Connects the center of one circle to the next one
     ctx.lineTo(mouseX, mouseY);
 
+    // Draws the line connecting dots
+    ctx.stroke()
+    
     // Shifts the path to the start position of drawing the circle
     ctx.moveTo(mouseX+radius, mouseY);
 
