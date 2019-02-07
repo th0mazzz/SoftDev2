@@ -28,6 +28,7 @@ var clear = function(e){
 };
 
 var drawDot = function(){
+    window.cancelAnimationFrame(requestId);
     clicked = true;
     clickedDvd = false;
     if(c.width/2 == radius){
@@ -64,6 +65,7 @@ var dvdLogoSetup = function(){
 }
 
 var bounce = function(){
+    window.cancelAnimationFrame(requestIdDvd);
     clicked = false;
     clickedDvd = true;
     //console.log(x, y);
