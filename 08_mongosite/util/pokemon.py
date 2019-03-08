@@ -11,19 +11,19 @@ import pymongo, pprint, json
 
 # collection.insert(data)
 
-def find_types(collection, type_0, type_1 = None):
+def find_types(collection, type_0, type_1):
     returned_set = set()
-    if type_1 == None:
-        for pokemon in collection.find( {"type": type_0 } ):
+    if type_1 == "None":
+        for pokemon in collection.find( {"type": type_0 }  ):
             returned_set.add(pokemon["name"])
     else:
-        for pokemon in collection.find( { '$and': [ {"type": type_0}, {"type": type_1} ] } ):
+        for pokemon in collection.find({ "$and": [ {"type": type_0}, {"type": type_1} ] }):
             returned_set.add(pokemon["name"])
     return list(returned_set)
 
 
-print(find_types(collection, "Water"))
-print(find_types(collection, "Fire", "Flying"))
+#print(find_types(collection, "Water"))
+#print(find_types(collection, "Fire", "Flying"))
 
 
 
