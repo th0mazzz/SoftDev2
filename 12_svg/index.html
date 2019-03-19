@@ -1,0 +1,45 @@
+<!-- Thomas Zhao
+     Softdev pd8
+     K12 -- Dabbling in D3
+     03/19/2019
+  -->
+
+<!-- NOTES/OBSERVATIONS
+
+     Opening the starter HTML files:
+     - The bars matched the hardcoded lengths and they had some text in the bars indicating said length.
+     - barUpdate, I'm not entirely sure on how this works.
+     - What does the .enter() and .append() do exactly, and why are we selectingAll with divs?
+     
+     Testing my own:
+     - Predicted that it would make another chart; I realize now that I was blatantly incorrect.
+
+  -->
+
+<!DOCTYPE html>
+<style>
+  .chart div {
+  font: 10px sans-serif;
+  background-color: steelblue;
+  text-align: right;
+  padding: 3px;
+  margin: 1px;
+  color: white;
+  }
+</style>
+
+
+<div class="chart">
+  <div style="width: 40px;">4</div>
+  <div style="width: 80px;">8</div>
+  <div style="width: 160px;">15</div>
+  <div style="width: 170px;">16</div>
+  <div style="width: 230px;">23</div>
+  <div style="width: 460px;">42</div>
+</div>
+
+<!--
+    <div class="chart"></div> 
+-->
+    
+<script src="http://d3js.org/d3.v5.min.js"></script>
