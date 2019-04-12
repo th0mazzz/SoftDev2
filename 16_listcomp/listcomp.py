@@ -1,3 +1,10 @@
+'''
+Thomas Zhao
+SoftDev2 pd8
+K16 -- Do You Even List?
+2019-04-11
+'''
+
 uppercase = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 lowercase = 'abcdefghijklmnopqrstuvwxyz'
 numbers = '1234567890'
