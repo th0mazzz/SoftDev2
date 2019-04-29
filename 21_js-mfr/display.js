@@ -1,3 +1,10 @@
+/*
+  Thomas Zhao
+    SoftDev2 pd 8
+    K#21: Onions, Bell Peppers, and Celery, Oh My!
+    2019/04/29
+*/
+
 d3.json("https://raw.githubusercontent.com/stuy-softdev/workshop/master/thluffy/21_js-mfr/2006_-_2012_School_Demographics_and_Accountability_Snapshot.json?token=AICAFYKEEQMAE2EFLQKQV3S42B2RS").then(function(data) {
 
     var total_enrollment = data
