@@ -26,17 +26,21 @@ def make_counter():
         nonlocal x
         x = x + 1
         return x
-    return count
+    def access():
+        nonlocal x
+        return x
+    return (count, access)
 
-ctr1 = make_counter()
+ctr1, accessor1 = make_counter()
 print(ctr1())
 print(ctr1())
 
-ctr2 = make_counter()
+ctr2, accessor2 = make_counter()
 print(ctr2())
 print(ctr1())
 print(ctr2())
 
 #Numero Tres
 #Look at Numero Dos
-#Not sure how to do accessor methods...
+
+print(accessor1())
